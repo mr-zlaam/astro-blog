@@ -1,0 +1,20 @@
+---
+
+---
+
+<footer
+  class="flex justify-center shadow-md shadow-[#28282b]/30 p-5 items-center h-[70px]"
+>
+  <small class="text-xs">
+    Copy &copy; <a href="https://github.com/mr-zlaam">Zlaam</a> | <span
+      id="copyrightYear"
+      class="mx-1">2024</span
+    >All rights reserved >
+  </small>
+</footer>
+<script>
+  const element = document.getElementById("copyrightYear");
+  if (element) {
+    element.innerHTML = new Date().getFullYear().toString();
+  }
+</script>

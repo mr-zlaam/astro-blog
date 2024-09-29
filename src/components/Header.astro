@@ -1,0 +1,21 @@
+---
+import { IoLogoCodepen } from "react-icons/io";
+import { navData } from "../data/navData";
+---
+
+<header>
+  <nav class="flex justify-around">
+    <a href="/">
+      <IoLogoCodepen size={40} />
+    </a>
+    <ul class="flex items-center justify-around gap-5">
+      {
+        navData.map((data) => (
+          <a href={data.path} class="">
+            {data.name}
+          </a>
+        ))
+      }
+    </ul>
+  </nav>
+</header>
